@@ -4,6 +4,8 @@ class BootStrap {
 
     def init = { servletContext ->
 
+/*
+
 
 def man1 = new com.rbarber.Manager(
 	fullName: 'Graham Tighe',
@@ -136,7 +138,7 @@ emp2.addToTask(tas2)
 //tas2.addToTeam(tea2)*
 
 
-
+*/
 
 
 

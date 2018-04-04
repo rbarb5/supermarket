@@ -20,7 +20,11 @@ static hasMany = [task:Task,team:Team]
 
 String toString()
 {
-	return "$employeeID - $fullName"
+	return "$employeeID,$fullName"
+}
+
+String toStringTest(){
+"$employeeID,$taxCode"
 }
 
     static constraints = {

@@ -114,22 +114,28 @@ def emp2 =new com.rbarber.Employee (
 	task: tas2).save(failOnError:true)
 
 
-//emp1.addToTeam(tea1)
-//emp2.addToTeam(tea2)
+emp1.addToTeam(tea1)
+emp2.addToTeam(tea2)
+shi1.addToTeam(tea1)
+shi2.addToTeam(tea2)
+tas1.addToTeam(tea1)
+tas2.addToTeam(tea2)
 
-//tas1.addToTeam(tea1)
-//tas2.addToTeam(tea2)
+shi1.addToTask(tas1)
+shi2.addToTask(tas2)
+emp1.addToTask(tas1)
+emp2.addToTask(tas2)
 
-//tas1.addToShift(shi1)
-//tas1.addToShift(shi2)
-//tas2.addToShift(shi1)
-//tas2.addToShift(shi2)
-//tas1.addToEmployee(emp1)
-//tas2.addToEmployee(emp2)
-//tea1.addToShift(shi1)
-//tea2.addToShift(shi2)
-//tea1.addToShift(shi2)
-//tea2.addToShift(shi1)
+
+
+
+//emp1.addToTeam(tea1) *
+//emp2.addToTeam(tea2)*
+
+//tas1.addToTeam(tea1)*
+//tas2.addToTeam(tea2)*
+
+
 
 
 

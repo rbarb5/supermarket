@@ -17,6 +17,9 @@ String toString()
 }
 
 
+String toStringTestManager(){
+	"$office,$department"
+}
 
 
     static constraints = {

@@ -11,14 +11,10 @@ class EmployeeSpec extends Specification implements DomainUnitTest<Employee> {
     def cleanup() {
     }
 
-    void mergeData() {
-	when: "An employee has employeeID, taxCode"
-
-	def emp1 =new Employee (
-	employeeID: 'JS86',
-	taxCode:'UK123')
-
-	then:"the toString method will merge them."
-	emp1.toStringTest()=='JS86,UK123'
-    }
+	void calcWeeklyWage(){
+when: "A Employee has a fullName and a hourlyRate"
+def emp1=new Employee(fullName:'Jack Smith', hourlyRate: 9.55)
+then:"The calcWeeklyWage method will calculate the weekly wage"
+emp1.calcWeeklyWage()==353.35
+}
 }

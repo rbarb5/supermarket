@@ -11,8 +11,11 @@ class TeamLeaderSpec extends Specification implements DomainUnitTest<TeamLeader>
     def cleanup() {
     }
 
-    void "test something"() {
-        expect:"fix me"
-            true == false
-    }
+    void testEmail(){
+	when:"TeamLeader is created with fullName and emailaddress"
+	def lea1 = new TeamLeader(fullName:'Jack Hopkinson', leaderEmail: 'JH456@hrsystem.com')
+	then: 'Validation should fail'
+	!lea1.validate()
+}
+
 }

@@ -1,0 +1,39 @@
+package com.rbarber
+
+class Employee {
+
+String fullName
+Date dateOfBirth
+String residence
+Double hourlyRate
+String employeeID
+Date dateEmployed
+String taxCode
+String contract
+
+Manager manager
+TeamLeader teamleader
+Shift shift
+
+static belongsTo = [Team,Task]
+static hasMany = [task:Task,team:Team]
+
+String toString()
+{
+	return "$employeeID - $fullName"
+}
+
+    static constraints = {
+
+fullName blank:false, nullable:false
+dateOfBirth blank:false, nullable:false
+residence blank:false, nullable:false
+hourlyRate blank:false, nullable:false, min:0d, scale:2
+employeeID blank:false, nullable:false, unique:true
+dateEmployed blank:false, nullable:false
+taxCode blank:false, nullable:false
+contract blank:false, nullable:false
+
+
+    }
+}

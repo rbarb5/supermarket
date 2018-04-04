@@ -23,8 +23,12 @@ String toString()
 	return "$employeeID,$fullName"
 }
 
-String toStringTest(){
-"$employeeID,$taxCode"
+//String toStringTest(){
+//"$employeeID,$taxCode"
+//}
+
+double calcWeeklyWage(){
+37*hourlyRate
 }
 
     static constraints = {
